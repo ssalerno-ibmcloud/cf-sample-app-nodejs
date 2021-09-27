@@ -1,6 +1,10 @@
 ---
 applications:
-- name: cf-nodejs
+- name: cf-env-test
   memory: 512M
   instances: 1
   random-route: true
+  buildpacks:
+    - https://github.com/cloudfoundry/nodejs-buildpack#1.7.61
+  env:
+    testing: true

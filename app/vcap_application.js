@@ -40,5 +40,11 @@ module.exports = {
       var app_info = JSON.parse( process.env.VCAP_APPLICATION)
       return app_info.limits.disk
     }
+  },
+  get_app_test_var: function() {
+    if ( process.env.TESTING) {
+      var app_testing = process.env.TESTING
+      return app_testing
+    }
   }
 }

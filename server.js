@@ -2,6 +2,7 @@ var express = require( 'express')
 var app = express()
 var cf_app = require( './app/vcap_application')
 var cf_svc = require( './app/vcap_services')
+var is_testing = process.env.TESTING
 
 app.set( 'views', __dirname + '/views')
 app.set( 'view engine', 'jade')

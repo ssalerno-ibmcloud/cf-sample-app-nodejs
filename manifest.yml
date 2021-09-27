@@ -5,6 +5,6 @@ applications:
   instances: 1
   random-route: true
   buildpacks:
-    - https://github.com/cloudfoundry/nodejs-buildpack#1.7.61
+    - https://github.com/cloudfoundry/nodejs-buildpack.git#v1.7.61
   env:
     TESTING: true

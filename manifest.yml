@@ -7,4 +7,4 @@ applications:
   buildpacks:
     - https://github.com/cloudfoundry/nodejs-buildpack#1.7.61
   env:
-    testing: true
+    TESTING: true
